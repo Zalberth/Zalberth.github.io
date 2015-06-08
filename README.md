@@ -14,3 +14,7 @@ var zmh = function(err){
 ---
 hello[^hello]
 [^hello]:hii
+
+2. hello
+3. 3.90
+1. 88888
