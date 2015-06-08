@@ -1,4 +1,4 @@
-#  http<span></span>://www.ibasonic.com
+# www<nolink>.ibasonic.com
 ## Testing the Markdown grammar.
 * list1
 * list2
