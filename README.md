@@ -1,4 +1,5 @@
 # ibasonic.com
+* if `www` is added before ibasonic.com, an auto link will trigger.
 ## Testing the Markdown grammar.
 * list1
 * list2
