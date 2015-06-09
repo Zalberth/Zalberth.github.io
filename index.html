@@ -6,18 +6,18 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <title>_水桦_的个人主页</title>
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <title></title>
   </head>
 
   <body>
       <div class="container">
         <div id="header">
-          <div style="text-align:center;"><h1>_水桦_的主页</h1></div>
+          <div style="text-align:center;"><h1></h1></div>
         </div>
         <div id="mainbody">
-
+           <div id="leftsec"></div>
+           <div id="rightsec"></div>
           <section>
            
             <!--如果一个单词太长会造成无法断行,但加入word-break:break-all;
@@ -27,6 +27,18 @@
         <div id="footer">
         <div style="text-align:center;"><h2>版权声明@2015</h2></div>          
         </div>
-      </div>   
+      </div>
+      <script type="text/javascript">
+      $(function() {
+        
+        var rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width'));
+        $('#rightsec').css('width' , rightsecWidth + 'px');
+      
+        $(window).resize(function() {
+          rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width'));
+          $('#rightsec').css('width' , rightsecWidth-1 + 'px'); //minus 1 can fix a bug
+        });
+      });
+      </script>   
   </body>
 </html>
