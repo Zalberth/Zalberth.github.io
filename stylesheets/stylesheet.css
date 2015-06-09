@@ -85,7 +85,7 @@ header h2 {
 
 #header {
   width:100%;
-  height:20%;
+  height:10%;
   box-sizing:border-box;
   padding-top: 30px;
   background-color:#018843;
@@ -93,13 +93,13 @@ header h2 {
 
 #mainbody {
   width:100%;
-  height:60%;
+  height:75%;
   background-color:#FED756;
 }
 
 #footer {
   width:100%;
-  height:20%;
+  height:15%;
   box-sizing:border-box;
   padding-top: 30px;
   background-color:#0F3935;
