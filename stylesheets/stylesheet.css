@@ -1,7 +1,7 @@
 html,body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
+ /*background: #151515 url("../images/bkg.png") 0 0;*/
   color: #eaeaea;
   height: 100%;
   line-height: 1.5;
@@ -9,7 +9,8 @@ html,body {
 }
 
 body {
-  font-size: 62.5%;
+	 background:url("../images/bkg.jpg") top right no-repeat; background-attachment:fixed; 
+	 background-size: 100% 100%;
 }
 /* General & 'Reset' Stuff */
 
