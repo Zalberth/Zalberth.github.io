@@ -19,10 +19,11 @@
            <div id="leftsec">
              <ul>
                <li id="wingit">Windows上安装Git</li>
+               <li id="resume">-----Resume------</li>
              </ul>
            </div>
            <div id="rightsec">
-             <iframe id="maincontent" src="articles/gitInWindowsInstall.html" frameBorder=0 marginwidth=0 marginheight=0 scrolling=no style="width:100%;height:100%;" scrolling=no ></iframe>
+             <iframe id="maincontent" src="articles/gitInWindowsInstall.html" frameBorder=0 marginwidth=0 marginheight=0 style="width:100%;height:100%;" scrolling="auto"></iframe>
            </div>
           <section>
            
@@ -48,7 +49,11 @@
         $('#wingit').on('click',function(e) {
           e.preventDefault();
           $('#maincontent').attr("src","negmargin.html");
-        })
+        });
+        $('#resume').on('click',function(e) {
+          e.preventDefault();
+          $('#maincontent').attr("src","articles/resume.html");
+        });
       });
       </script>   
   </body>
