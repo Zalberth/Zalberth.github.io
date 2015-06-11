@@ -2,7 +2,7 @@ html,body {
   margin: 0;
   padding: 0;
  /*background: #151515 url("../images/bkg.png") 0 0;*/
-  color: #eaeaea;
+  color: black;
   height: 100%;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 
 li {
   line-height: 1.4 ;
+}
+
+li:hover{
+  cursor: pointer;
 }
 
 /* Header, <header>
@@ -168,7 +172,7 @@ ul li {
 }
 
 ul li:before {
-  content: ">>";
+  content: "+";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
   color: #b5e853;
