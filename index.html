@@ -13,29 +13,32 @@
   <body>
       <div class="container">
         <div id="header">
-         
+          <img src="images/albertzmh.png" id="idTitle">
+          <div id="zmh_links">My Github</div>
         </div>
         <div id="mainbody">
           <div id="rightsec">
             <div id="right_container">
-               <iframe id="maincontent" src="articles/gitInWindowsInstall.html" frameBorder=0 marginwidth=0 marginheight=0 style="height:100%;width:100%;" scrolling="auto"></iframe>
+               <iframe id="maincontent" src="articles/gitInWindowsInstall.html" frameBorder=0 marginwidth=0 marginheight=0 style="height:100%;width:100%;border-radius:5px;" scrolling="auto"></iframe>
             </div>          
           </div>
            <div id="leftsec">
-             <ul>
+             <ul id="article_list">
                <li id="wingit">Windows上安装Git</li>
                <li id="resume">-----Resume------</li>
              </ul>
+             <div id="zmh_usf_links"></div>
            </div>
            
-          <section>
-           
+         
             <!--如果一个单词太长会造成无法断行,但加入word-break:break-all;
   word-wrap:break-word;样式后可以实现强制断行-->
-          </section>         
+                 
         </div>
         <div id="footer">
-        <div style="text-align:center;"><h2>版权声明@2015</h2></div>          
+        <div style="text-align:center;color:#1AA2A5">
+          We rise from downtown!
+        </div>          
         </div>
       </div>
       <script type="text/javascript">
@@ -57,6 +60,10 @@
         $('#resume').on('click',function(e) {
           e.preventDefault();
           $('#maincontent').attr("src","articles/resume.html");
+        });
+        $('#zmh_links').on('click',function(e) {
+          e.preventDefault();
+          window.open("https://github.com/Zalberth");    
         });
       });
       </script>   

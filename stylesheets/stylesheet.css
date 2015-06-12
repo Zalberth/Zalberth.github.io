@@ -93,11 +93,46 @@ header h2 {
 }
 
 #header {
-  width:100%;
-  height:10%;
+  width:100%; 
+ height: 80px;
+  margin-top: 5px;
   box-sizing:border-box;
-  padding-top: 30px;
   background-color:#27B1B4;
+  border-radius: 5px;
+}
+#idTitle {
+  float: left;
+  height: 100%;
+  width: 200px;
+  margin-left:20px;
+  cursor: pointer;
+}
+#zmh_links {
+  float:right;  
+  cursor: pointer;
+  color: white;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 3px;
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -ms-transition: box-shadow 0.2s ease;
+  -o-transition:box-shadow 0.2s ease;
+  transition:box-shadow 0.2s ease;
+}
+#zmh_links:hover {
+  
+  border:2px solid white;
+  margin-top: 23px;
+  margin-right: 8px;
+  box-shadow: 2px 2px 2px #D5EFC8;
+
+  transform:rotate(9deg);
+-ms-transform:rotate(9deg);   /* IE 9 */
+-moz-transform:rotate(9deg);  /* Firefox */
+-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+-o-transform:rotate(9deg);  /* Opera */
+ 
 }
 
 #mainbody {
@@ -105,6 +140,7 @@ header h2 {
   height:75%;
   background-color:white;
   border-top:10px solid white; 
+  border-radius: 5px;
 }
 
 #leftsec {
@@ -112,23 +148,28 @@ header h2 {
   width:250px;
   margin-left: -100%;
   height:100%;
-  background-color:#D5EFC8;
+  background-color:#A2D389;
+  border-radius: 5px;
+  position: relative;
  
 }
 #rightsec {
   float:left;
   width: 100%;
   height:100%;
+  
   /*background-color:#CDF0EC;*/
 }
 
 #footer {
   width:100%;
   height:15%;
+  margin-top: 6px;
+  margin-bottom: 5px;
   box-sizing:border-box;
   padding-top: 30px;
   background-color:#E7EFE2;
-  border-top:6px solid white;
+  border-radius: 5px;
 }
 section img {
   max-width: 100%
@@ -179,6 +220,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+#article_list {
+  margin-left: 5px;
+  color: white;
+}
+#zmh_usf_links {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-color: red;
+}
 dt {
   font-style: italic;
   font-weight: bold;
