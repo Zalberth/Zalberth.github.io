@@ -234,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   border-radius: 5px;
   background-color: red;
+  cursor: pointer;
 }
 #fixedElem {
   position: fixed;
