@@ -16,15 +16,18 @@
          
         </div>
         <div id="mainbody">
+          <div id="rightsec">
+            <div id="right_container">
+               <iframe id="maincontent" src="articles/gitInWindowsInstall.html" frameBorder=0 marginwidth=0 marginheight=0 style="height:100%;width:100%;" scrolling="auto"></iframe>
+            </div>          
+          </div>
            <div id="leftsec">
              <ul>
                <li id="wingit">Windows上安装Git</li>
                <li id="resume">-----Resume------</li>
              </ul>
            </div>
-           <div id="rightsec">
-             <iframe id="maincontent" src="articles/gitInWindowsInstall.html" frameBorder=0 marginwidth=0 marginheight=0 style="width:100%;height:100%;" scrolling="auto"></iframe>
-           </div>
+           
           <section>
            
             <!--如果一个单词太长会造成无法断行,但加入word-break:break-all;
@@ -38,13 +41,14 @@
       <script type="text/javascript">
       $(function() {
         
-        var rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width'));
-        $('#rightsec').css('width' , rightsecWidth + 'px');
+      var rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width')) - 10;
+        $('#right_container').css('width' , rightsecWidth + 'px');
       
         $(window).resize(function() {
-          rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width'));
-          $('#rightsec').css('width' , rightsecWidth-1 + 'px'); //minus 1 can fix a bug
+          rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width')) - 10;
+          $('#right_container').css('width' , rightsecWidth-1 + 'px'); //minus 1 can fix a bug
         });
+
 
         $('#wingit').on('click',function(e) {
           e.preventDefault();

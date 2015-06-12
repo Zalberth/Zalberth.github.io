@@ -17,6 +17,7 @@ body {
 
 .container {
   width: 90%;
+  min-width: 700px;
   height: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -107,17 +108,18 @@ header h2 {
 }
 
 #leftsec {
-  float:left;
+  float: left;
   width:250px;
+  margin-left: -100%;
   height:100%;
   background-color:#D5EFC8;
  
 }
 #rightsec {
   float:left;
-  width:100px;
+  width: 100%;
   height:100%;
-  background-color:#CDF0EC;
+  /*background-color:#CDF0EC;*/
 }
 
 #footer {
@@ -125,7 +127,7 @@ header h2 {
   height:15%;
   box-sizing:border-box;
   padding-top: 30px;
-  background-color:#F6F8F7;
+  background-color:#E7EFE2;
   border-top:6px solid white;
 }
 section img {
@@ -169,6 +171,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #999;
   margin: 0 0 5px 0;
+}
+
+#right_container {
+  margin-left: 260px;
+  width: 50px;
+  height: 100%;
 }
 
 dt {
