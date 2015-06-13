@@ -27,3 +27,5 @@ hello[^hello]
 * [maxiang.info][2]
 [1]:http://mahua.jser.me/
 [2]:http://maxiang.info/
+
+- `git reset --hard commit_id` and `git push --force` will be helpful when u want to roll the remote repo.
