@@ -4,72 +4,41 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/newversion.css" media="screen">
     <script type="text/javascript" src="javascripts/jquery.js"></script>
-    <title>_水桦_的个人主页</title>
+    <title>Basic Layout</title>
   </head>
 
   <body>
-      <div class="container">
+        <div style="width:100%;height:135px;"></div>
+        <div style="position:fixed;width:100%;top:80px;left:0;height:45px;background-color:white;z-index:1"></div>
         <div id="header">
           <img src="images/albertzmh.png" id="idTitle">
-          <div id="zmh_links">My Github</div>
+          <div id="zmh_links">New Version</div>
         </div>
-        <div id="mainbody">
-          <div id="rightsec">
-            <div id="right_container">
-               <iframe id="maincontent" src="articles/gitInWindowsInstall.html" frameBorder=0 marginwidth=0 marginheight=0 style="height:100%;width:100%;border-radius:5px;" scrolling="auto"></iframe>
-            </div>          
+          <div id="contentDisplayer">
+             <!--Ajax Load-->
           </div>
-           <div id="leftsec">
+           <div id="articleLists">
              <ul id="article_list">
-               <li id="wingit">Windows上安装Git</li>
-               <li id="resume">RESUME SAMPLE</li>
-               <li><a href="http://www.atool.org/httptest.php" target="_blank">在线HTTP POST/GET接口测试工具</a></li>
-             </ul>
-             <div id="zmh_usf_links"></div>
+               <li data-target="gitInWindowsInstall">Windows上安装Git</li>
+               <li data-target="resume">RESUME SAMPLE</li>
+               <li data-target="gitInWindowsInstall">Windows上安装Git</li>
+               <li data-target="resume">RESUME SAMPLE</li>
+               <li data-target="gitInWindowsInstall">Windows上安装Git</li>
+               <li data-target="resume">RESUME SAMPLE</li>
+              </ul>      
            </div>
            
          
             <!--如果一个单词太长会造成无法断行,但加入word-break:break-all;
   word-wrap:break-word;样式后可以实现强制断行-->
                  
-        </div>
-        <div id="footer">
-        <div style="text-align:center;color:#1AA2A5">
-          WE RISE FROM DOWNTOWN, HEAD FOR NOWHERE
-        </div>          
-        </div>
-      </div>
-      <div id="fixedElem"></div>
-      <script type="text/javascript">
-      $(function() {
+       
         
-        var toggleUsflinks;
-
-      var rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width')) - 10;
-        $('#right_container').css('width' , rightsecWidth + 'px');
       
-        $(window).resize(function() {
-          rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width')) - 10;
-          $('#right_container').css('width' , rightsecWidth-1 + 'px'); //minus 1 can fix a bug
-        });
-
-
-        $('#wingit').on('click',function(e) {
-          e.preventDefault();
-          $('#maincontent').attr("src","negmargin.html");
-        });
-        $('#resume').on('click',function(e) {
-          e.preventDefault();
-          $('#maincontent').attr("src","articles/resume.html");
-        });
-        $('#zmh_links').on('click',function(e) {
-          e.preventDefault();
-          window.open("https://github.com/Zalberth");    
-        });
-      });
+      <div id="fixedElem"></div>
+      <script type="text/javascript" src="javascripts/newversion.js">
       </script>   
   </body>
 </html>
