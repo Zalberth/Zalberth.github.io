@@ -11,6 +11,8 @@ body {
 	 background-size: 100% 100%;
 	 */
 }
+
+
 /* General & 'Reset' Stuff */
 
 .container {
@@ -127,6 +129,9 @@ section img {
 #article_list {
   margin-left: 5px;
   color: white;
+}
+.zmh_cursor:hover {
+	cursor: pointer;
 }
 #zmh_usf_links {
   position: absolute;
