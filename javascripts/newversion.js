@@ -41,6 +41,9 @@ $(function() {
         
               $('.zmh_cursor').on('click',function(e) {
               	e.preventDefault();
+              	$('.currentItem').removeClass('currentItem');
+              	$(e.target).addClass('currentItem');
+
               	var _target = $(e.target).data('target');  //get the value data-*
               	$.get('articles/'+_target+'.html', function(data) {
       		       $('#contentDisplayer').html(data);
