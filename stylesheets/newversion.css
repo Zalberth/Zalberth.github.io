@@ -192,7 +192,9 @@ section img {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-
+#toggleArticleLists {
+	display: none;
+}
 
 /*Scrollbar jquery has plugins to make*/
 
@@ -237,6 +239,7 @@ section img {
 
 #toggleArticleLists {
   position: fixed;
+  display: block;
   top: 80px;
   left: 0;
   width:100%;
