@@ -3,7 +3,7 @@ $(function() {
       var mq = window.matchMedia( "(max-device-width: 800px)" );
       if(mq.matches) {
       	$('#article_list').css('display','none');
-      	$('#articleLists').on('tap',function(e) {
+      	$('#articleLists').on('click',function(e) {
       		$(this).animate({height:'100px'});
       	});
       }else {
