@@ -15,13 +15,7 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.container {
-  width: 90%;
-  min-width: 700px;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 
 
@@ -197,3 +191,155 @@ section img {
 
 
 /*Scrollbar jquery has plugins to make*/
+
+
+
+/*iphone 6 media query*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {
+     /*iPhone 6 Portrait*/
+    /* General & 'Reset' Stuff */
+
+/* Main Content
+*/
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%; 
+  height: 80px;
+  box-sizing:border-box;
+  background-color:#27B1B4;
+  z-index: 1;
+}
+#idTitle {
+  float: left;
+  height: 100%;
+  width: 20%;
+  margin-left:2px;
+  cursor: pointer;
+}
+#zmh_links {
+  float:right;  
+  cursor: pointer;
+  color: white;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 3px;
+}
+#zmh_links:hover {
+  
+  border:2px solid white;
+  margin-top: 23px;
+  margin-right: 8px;
+  box-shadow: 2px 2px 2px #D5EFC8; 
+}
+
+
+
+#articleLists {
+  position: fixed;
+  top: 125px;
+  left: 0;
+  width:20%;
+  height:auto;
+  background-color:#A2D389;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#contentDisplayer {
+    margin-left: 21%;
+    min-width: 500px;
+	width: 50%;
+	height: auto;
+}
+
+#footer {
+  width:100%;
+  height:15%;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  box-sizing:border-box;
+  padding-top: 30px;
+  background-color:#E7EFE2;
+  border-radius: 5px;
+}
+section img {
+  max-width: 100%
+}
+
+
+#right_container {
+  margin-left: 260px;
+  width: 50px;
+  height: 100%;
+}
+
+#article_list {
+  margin-left: 5px;
+  color: white;
+}
+.zmh_cursor:hover {
+	cursor: pointer;
+}
+#zmh_usf_links {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-color: red;
+  cursor: pointer;
+}
+#fixedElem {
+  position: fixed;
+  left: 21%;
+  top: 14px;
+  height: 0;
+  width: 0;
+  background-image: url("../images/avatar.jpg");
+  background-size: 100% 100%;
+  color: white;
+  border:2px solid white;
+  z-index: 2;
+}
+
+
+
+.btn {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.btn:hover {
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+}
+
+.btn .icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 1px 8px 0 0;
+  float: left;
+}
+
+.btn-github .icon {
+  opacity: 0.6;
+  background: url("../images/blacktocat.png") 0 0 no-repeat;
+} 
+}
