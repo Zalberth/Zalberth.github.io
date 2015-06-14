@@ -264,7 +264,7 @@ section img {
 
 
 #article_list {
-  margin-left: 5px;
+  margin-left: 0;
   margin-top: 35px;
   font-size: 16px;
   padding-left: 0;
@@ -306,6 +306,7 @@ section img {
 	box-sizing:border-box;
 	border-bottom: 1px solid #BCDFA9;
 }
+
 
 .zmh_cursor:hover {
 	cursor: pointer;
