@@ -234,13 +234,16 @@ section img {
 
 #articleLists {
   position: fixed;
-  top: 125px;
+  top: 80px;
   left: 0;
-  width:20%;
-  height:auto;
+  width:100%;
+  height:40px;
+  overflow: hidden;
   background-color:#A2D389;
-  border-top-right-radius: 9px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
+  z-index: 3;
 }
 
 #contentDisplayer {
@@ -273,6 +276,7 @@ section img {
 
 #article_list {
   margin-left: 5px;
+  font-size: 5px;
   color: white;
 }
 .zmh_cursor:hover {
