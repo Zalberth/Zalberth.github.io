@@ -254,8 +254,8 @@ section img {
 }
 
 #contentDisplayer {
-    margin-left: 21%;
-	width: 50%;
+	width: 100%;
+	margin-left: 0;
 	min-width: 200px;
 	height: auto;
 }
