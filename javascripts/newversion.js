@@ -39,7 +39,7 @@ $(function() {
               	$('#contentDisplayer').html(data);
               });
         
-              $('#article_list').on('click',function(e) {
+              $('.zmh_cursor').on('click',function(e) {
               	e.preventDefault();
               	var _target = $(e.target).data('target');  //get the value data-*
               	$.get('articles/'+_target+'.html', function(data) {
