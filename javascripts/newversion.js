@@ -1,10 +1,31 @@
 $(function() {
              
       var mq = window.matchMedia( "(max-device-width: 800px)" );
+      var listsClicked = 0;
+      var listNum = 0;
+      var listItemsHeight = 0;
       if(mq.matches) {
       	$('#article_list').css('display','none');
-      	$('#articleLists').on('click',function(e) {
-      		$(this).animate({height:'100px'});
+      	$('#toggleArticleLists').on('click',function(e) {
+      		if(listsClicked === 0){
+      			
+      			listNum = $('#article_list').children().length;
+      			listItemHeight = listNum*parseInt($('.zmh_cursor').css('height')) + 50;
+      		
+      			$('#articleLists').animate({height:listItemHeight+'px'},200,function() {
+      				$('#toggleArticleLists').text('SHRINK');
+      			});
+      			$('#article_list').css('display','block');
+      			listsClicked = 1;
+      		}else {
+      			$('#articleLists').animate({height:40+'px'},200,function() {
+      				$('#article_list').css('display','none');
+      				$('#toggleArticleLists').text('EXPAND');
+      			});
+      			
+      			listsClicked = 0;
+      		}
+      		
       	});
       }else {
       	      	            	              	             	        
