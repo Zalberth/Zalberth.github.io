@@ -1,5 +1,9 @@
 $(function() {
         
+      var mq = window.matchMedia( "(max-device-width: 800px)" );
+      if(mq.matches) {
+      	$('#article_list').css('display','none');
+      }
        
 
       var rightsecWidth = parseInt($('#mainbody').css('width'))-parseInt($('#leftsec').css('width')) - 10;

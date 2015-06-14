@@ -246,6 +246,13 @@ section img {
   z-index: 3;
 }
 
+
+#article_list {
+  margin-left: 5px;
+  font-size: 5px;
+  color: white;
+}
+
 #contentDisplayer {
     margin-left: 21%;
 	width: 50%;
@@ -274,11 +281,6 @@ section img {
   height: 100%;
 }
 
-#article_list {
-  margin-left: 5px;
-  font-size: 5px;
-  color: white;
-}
 .zmh_cursor:hover {
 	cursor: pointer;
 }
