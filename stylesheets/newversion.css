@@ -91,7 +91,7 @@ body {
   position: fixed;
   top: 125px;
   left: 0;
-  width:250px;
+  width:20%;
   height:auto;
   background-color:#A2D389;
   border-top-right-radius: 9px;
@@ -99,7 +99,7 @@ body {
 }
 
 #contentDisplayer {
-    margin-left: 275px;
+    margin-left: 21%;
     min-width: 500px;
 	width: 50%;
 	height: auto;
