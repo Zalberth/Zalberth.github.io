@@ -1008,4 +1008,5 @@
 <ul>
 <li>当使用<code>max-device-width</code>时，只会针对移动设备起作用，去掉<code>-device</code>即可实现桌面的响应式布局</li>
 <li>在CSS文件中media query使用格式举例：<code>@media only screen and (max-device-width: 800px) and (orientation : portrait) {/*specific css styles*/}</code></li>
+<li>如果要配合js使用,可以参考：<code>mq = window.matchMedia( "(max-device-width: 1200px)" );mq.addListener(mediaSizeChange);</code>其中<code>mediaSizeChange</code>为自定义函数。</li>
 </ul></article></body></html>
