@@ -10,7 +10,7 @@ $(function() {
           $('#right_container').css('width' , rightsecWidth-1 + 'px'); //minus 1 can fix a bug
         });
 
-        $('#zmh_links').on('click',function(e) {
+        $('#toGithub').on('click',function(e) {
           e.preventDefault();
           window.open("allin.html");    
         });

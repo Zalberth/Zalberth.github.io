@@ -108,7 +108,7 @@ header h2 {
   margin-left:20px;
   cursor: pointer;
 }
-#zmh_links {
+#toGithub {
   float:right;  
   cursor: pointer;
   color: white;
@@ -121,7 +121,7 @@ header h2 {
   -o-transition:box-shadow 0.2s ease;
   transition:box-shadow 0.2s ease;
 }
-#zmh_links:hover {
+#toGithub:hover {
   
   border:2px solid white;
   margin-top: 23px;

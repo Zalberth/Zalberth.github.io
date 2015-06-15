@@ -8,41 +8,32 @@
     <script type="text/javascript" src="javascripts/jquery.js"></script>
     <title>Great Far</title>
   </head>
-
   <body>
         <div style="width:100%;height:135px;"></div>
         <div style="position:fixed;width:100%;top:80px;left:0;height:45px;background-color:white;z-index:1"></div>
         <div id="header">
           <img src="images/albertzmh.png" id="idTitle">
-          <div id="zmh_links">MY GITHUB</div>
+          <div id="toGithub">MY GITHUB</div>
         </div>
-          <div id="contentDisplayer">
+        <div id="contentDisplayer">
              <!--Ajax Load-->
-          </div>
-          <div id="toggleArticleLists">EXPAND</div>
-           <div id="articleLists">
+        </div>
+        <div id="toggleArticleLists">EXPAND</div>
+        <div id="articleLists">
              <ul id="article_list">
+             <!--这一块将改为ajax载入-->
                <li class="zmh_cursor" data-target="gitInWindowsInstall">&nbsp;Windows上安装Git</li>
                <li class="zmh_cursor" data-target="resume">&nbsp;互联网公司应聘简历模板</li>
                <li class="zmh_cursor" data-target="mediaquery">&nbsp;CSS Media Query的使用</li>              
-              </ul>      
-           </div>
-           
-         
+            </ul>      
+        </div>                    
             <!--如果一个单词太长会造成无法断行,但加入word-break:break-all;
-  word-wrap:break-word;样式后可以实现强制断行-->
-                 
-       
-        
-      
-      <div id="fixedElem"></div>
-      <div id="footer">
-        <div id="footerNotes">Copyright @2015</div>   
-      </div>
-      <div id="bottomMargin">
-        
-      </div>
-      <script type="text/javascript" src="javascripts/newversion.js">
-      </script>   
+  word-wrap:break-word;样式后可以实现强制断行-->                                     
+        <div id="fixedElem"></div>
+        <div id="footer">
+           <div id="footerNotes">Copyright @2015</div>   
+        </div>
+        <div id="bottomMargin"></div>
+        <script type="text/javascript" src="javascripts/newversion.js"></script>   
   </body>
 </html>
