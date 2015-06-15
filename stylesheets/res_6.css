@@ -74,17 +74,27 @@
 }
 
 #footer {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width:100%;
-  height:15%;
-  margin-top: 6px;
-  margin-bottom: 5px;
+  height:70px;
   box-sizing:border-box;
-  padding-top: 30px;
   background-color:#E7EFE2;
-  border-radius: 5px;
 }
-section img {
-  max-width: 100%
+#bottomMargin {
+  display: block;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+}
+
+#footerNotes {
+  text-align: center;
+  color:#27B1B4;
+  font-weight: bolder;
+  margin-top: 20px;
 }
 
 
@@ -116,13 +126,21 @@ section img {
   background-color: red;
   cursor: pointer;
 }
+
 #fixedElem {
   position: fixed;
-  left: 21%;
-  top: 14px;
-  height: 0;
-  width: 0;
-  z-index: -1;
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  height: 70px;
+  width: 70px;
+  background-image: url("../images/avatar.jpg");
+  background-size: 100% 100%;
+  color: white;
+  border-radius: 0;
+  border:0 solid white;
+  z-index: 2;
 }
 
 
