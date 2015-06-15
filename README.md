@@ -29,3 +29,7 @@ hello[^hello]
 [2]:http://maxiang.info/
 
 - `git reset --hard commit_id` and `git push --force` will be helpful when u want to roll the remote repo.
+
+###20150616 updates
+- Pages work fine in both mobile browsers and desktop ones.
+
