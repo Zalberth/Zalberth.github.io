@@ -1,6 +1,6 @@
 $(function() {
              
-      var mq = window.matchMedia( "(max-device-width: 1600px)" );
+      var mq = window.matchMedia( "(max-device-width: 1200px)" );
       var listsClicked = 0;
       var listNum = 0;
       var listItemsHeight = 0;
