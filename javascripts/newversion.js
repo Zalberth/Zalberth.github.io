@@ -10,6 +10,17 @@ $(function() {
 
       function mediaSizeChange(mediaQuery) { //Listening to the Media Query Change
         if( mediaQuery.matches ){
+        	$('#toggleArticleLists').off();
+        	$('#contentDisplayer').off();
+        	$('#contentDisplayer').on('click',function(e) {
+        		if(listsClicked === 1) {
+        			 $('#articleLists').animate({height:40+'px'},200,function() {
+                   $('#article_list').css('display','none');
+                   $('#toggleArticleLists').text('EXPAND');
+                });
+        			listsClicked = 0;
+        		}
+        	});
             $('#article_list').css('display','none');
             $('#toggleArticleLists').on('click',function(e) {
               if(listsClicked === 0){                
