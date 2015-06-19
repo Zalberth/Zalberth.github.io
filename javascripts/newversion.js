@@ -13,6 +13,7 @@ $(function() {
         	$('#toggleArticleLists').off();
         	$('#contentDisplayer').off();
         	$('#contentDisplayer').on('click',function(e) {
+        		e.preventDefault();
         		if(listsClicked === 1) {
         			 $('#articleLists').animate({height:40+'px'},200,function() {
                    $('#article_list').css('display','none');
