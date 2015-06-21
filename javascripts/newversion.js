@@ -26,7 +26,7 @@ $(function() {
             $('#toggleArticleLists').on('click',function(e) {
               if(listsClicked === 0){                
                 listNum = $('#article_list').children().length;
-                listItemHeight = listNum*parseInt($('.zmh_cursor').css('height')) + 50;
+                listItemHeight = listNum*30 + 50;
               
                 $('#articleLists').animate({height:listItemHeight+'px'},200,function() {
                   $('#toggleArticleLists').text('SHRINK');
