@@ -18,6 +18,9 @@
   margin-left:2px;
   cursor: pointer;
 }
+@-webkit-keyframes hopping { /*prefix -webkit cannot be removed for Chrome*/
+ /*Disable the previous animation*/
+}
 #toGithub {
  float:right;  
   cursor: pointer;
@@ -144,7 +147,9 @@
   border:0 solid white;
   z-index: 2;
 }
-
+#stamp_kai,#stamp_garbage {
+	display: none;
+}
 
 
 .btn {
