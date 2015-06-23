@@ -134,7 +134,10 @@ section img {
 }
 .zmh_cursor {
 	width: 100%;
-    height: auto;
+  height: auto;
+}
+.zmh_cursor:before {
+  content: "\0020";
 }
 .zmh_cursor:hover {
 	cursor: pointer;
