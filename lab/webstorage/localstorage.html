@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Local Storage</title>
+	<script>
+	function init() {
+		//Check if browser supports html5 storage or not
+		if(typeof(Storage) !== 'undefined') {
+			if(localStorage.length != 0) { //if localStorage is not empty
+				document.getElementById('noOfArticleSubscribed').value = localStorage.getItem('noOfArticleSubscribed');
+			}else { //if localStorage is empty,set default value
+				document.getElementById('noOfArticleSubscribed').value = '1';
+			}
+		}else {
+			alert("Oop! Your browser does not support html5 web storage.");
+		}
+	};
+ 	function saveSettings() {
+		if (typeof(Storage) !== 'undefined') {
+			try {
+				localStorage.setItem("noOfArticleSubscribed",document.getElementById('noOfArticleSubscribed').value);
+			} catch (e) {
+				if (e == QUOTA_EXCEEDED_ERR) {
+					alert('Oop! Not enough storage space.');
+				}
+			}
+		} else {
+			alert("Oop! Your browser does not support html5 web storage.");
+		}
+	};
+	function removeSettings() {
+		if (typeof(Storage) !== 'undefined') {
+			localStorage.removeItem('noOfArticleSubscribed');
+			init();
+		} else {
+			alert("Oop! Your browser does not support html5 web storage.");
+		}
+	};
+	function checkout() {
+		window.location.assign('localstorage_checkout.html');
+	};
+	</script>
+</head>
+<body onload="init()">
+	<div style="text-align:center">
+		<h1>Welcom to CP Library</h1>
+		<h2>Subscription Counter</h2>
+		<label for="noOfArticleSubscribed">No of Article Subscribed</label>
+		<input type="number" id="noOfArticleSubscribed" max="6" min="1" value="1">
+		<br>
+		<button type="button" onclick="saveSettings()">Save</button>
+		<button type="button" onclick="removeSettings()">Clear</button>
+		<button type="button" onclick="checkout()">Check Out</button>
+	</div>
+</body>
+</html>

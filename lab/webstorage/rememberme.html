@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Remember Me</title>
+<script>
+    var backgroundColor;
+    var fontWeight;    
+    var canvas;
+    var context;
+    var second;
+    function init() {
+        applySettings();    
+        document.getElementById('backgroundColor').value = backgroundColor;
+        document.getElementById('fontWeight').value = fontWeight;        
+        canvas = document.getElementById("canvas");
+        context = canvas.getContext("2d");        
+        second = 0;
+        // Set a timer to run the draw() function every one second
+        timer = setInterval(draw, 1000);
+        return timer;
+    }
+    function draw() {
+        // Clear the canvas
+        canvas.width = canvas.width;
+        context.beginPath();
+        // Draw a circle
+        context.arc(150, 100, 70, 0, 2 * Math.PI);
+        context.fillStyle = backgroundColor;        
+        context.fill();
+        // Define font and draw texts
+        context.font = fontWeight + 'px Arial';
+        context.fillStyle = "black";
+        context.fillText('12',137,50);
+        context.fillText('3',201,110);
+        context.fillText('6',143,161);
+        context.fillText('9',88,110);
+        // Set origin of canvas to 150, 100
+        context.translate(150, 100);
+        context.moveTo(0, 0);
+        // Rotate and draw a line
+        context.rotate(6 * second * Math.PI / 180);
+        context.lineTo(0, -60);
+        context.strokeStyle = "black";
+        context.stroke();
+        // Increase one second         
+        second = (second + 1) % 60;
+    }
+</script> 
+<script>
+function saveSettings() {
+    // Check whether browser supports HTML5 Storage or not
+    if (typeof(Storage)!=="undefined") {
+        try {
+                backgroundColor = document.getElementById('backgroundColor').value;
+            fontWeight = document.getElementById('fontWeight').value;
+               localStorage.setItem('backgroundColor', backgroundColor);
+             localStorage.fontWeight = fontWeight;
+        } catch (e) {
+            if (e == QUOTA_EXCEEDED_ERR) {
+                alert('Oh no! No more storage space already.');
+            }
+        }
+    } else {
+        alert('Oop! This browser does not support local storage');
+    }
+}
+function applySettings() {
+    if (localStorage.length != 0) {
+            backgroundColor = localStorage.getItem('backgroundColor');
+        fontWeight = localStorage.fontWeight;
+    } else {
+        backgroundColor = '#ffffff';
+        fontWeight = '12';
+    }
+    document.getElementById('backgroundColor').value = backgroundColor;
+    document.getElementById('fontWeight').value = fontWeight;
+}
+function clearSettings() {
+    localStorage.removeItem("backgroundColor");
+    localStorage.removeItem("fontWeight");
+    applySettings();
+}
+</script>
+</head>
+<body onload="init();" style="text-align: center; color: blue;">
+    <h2>Remember Me</h2>
+    <div>
+        <canvas id="canvas" width="300" height="200"
+            style="border: 1px solid #000000;">
+             Oops, this browser does not support canvas.
+          </canvas>
+    </div>
+    <div>
+        <form>
+            <label for="backgroundColor">Background Color</label>
+             <input type="color" id="backgroundColor" value="#ffffff">
+            <br>
+            <label for="fontWeight">Font Size</label>
+             <input type="number" id="fontWeight" max="20" min="10" value="12">
+             <br>
+            <button type="button" onclick="saveSettings()">Save</button>
+            <button type="button" onclick="clearSettings()">Reset</button>
+         </form>    
+    </div>
+</body>
+</html>

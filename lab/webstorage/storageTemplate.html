@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Session Storage Template</title>
+<script>
+function init(){
+    // Check whether browser supports HTML5 Storage or not
+    if (typeof(Storage)!=="undefined") {
+        if (sessionStorage.length != 0) { // If storage object is not empty
+            document.getElementById("replace with id of an HTML element").value  = sessionStorage.getItem("replace with a key name");
+        } else { // If storage object is empty, set default value
+            document.getElementById("replace with id of an HTML element").value = '1';
+        }
+    } else {
+        alert("Oop! This browser does not support HTML5 Web Storage.");
+    }
+}
+function saveSettings() {
+    // Check whether browser supports HTML5 Storage or not
+    if (typeof(Storage)!=="undefined") {
+        try {
+            sessionStorage.setItem("replace with a key name", "replace with a value");
+        } catch (e) {
+            if (e == QUOTA_EXCEEDED_ERR) {
+                alert("Oop! Not enough storage space.");
+            }
+        }
+    } else {
+        alert("Oop! This browser does not support HTML5 Web Storage.");
+    }
+}
+function removeSettings() {
+    // Check whether browser supports HTML5 Storage or not
+    if (typeof(Storage)!=="undefined") {
+        // Remove one item from the storage object
+        sessionStorage.removeItem("replace with a key name");
+        // Call init to reset the HTML elements
+        init();
+    } else {
+        alert("Oop! This browser does not support HTML5 Web Storage.");
+    }
+}
+</script>
+</head>
+<body onload="init()">
+
+</body>
+</html>
