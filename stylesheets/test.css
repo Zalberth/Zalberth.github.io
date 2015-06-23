@@ -78,9 +78,6 @@ body {
   -o-transform: rotate(9deg);
   /* Opera */
 }
-#toggleArticleLists {
-  display: none;
-}
 #articleLists {
   position: fixed;
   top: 145px;
@@ -102,6 +99,9 @@ body {
 }
 #bottomMargin {
   display: none;
+}
+section img {
+  max-width: 100%;
 }
 #right_container {
   margin-left: 260px;
@@ -174,9 +174,6 @@ body {
   height: 200px;
   width: 200px;
   z-index: 9;
-}
-.currentItem {
-  border-right: 2px solid #27b1b4;
 }
 .btn {
   display: inline-block;
