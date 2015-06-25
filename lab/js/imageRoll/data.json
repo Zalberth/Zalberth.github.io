@@ -1,19 +1,19 @@
 {
 	"images":[
 		{
-			"imageUrl":"avatar.jpg",
+			"imageUrl":"01.jpg",
 			"name":"avatar"
 		},
 		{
-			"imageUrl":"avatarMobile.png",
+			"imageUrl":"02.jpg",
 			"name":"avatarMobile"
 		},
 		{
-			"imageUrl":"stamp_garbage.png",
+			"imageUrl":"04.jpg",
 			"name":"garbage"
 		},
 		{
-			"imageUrl":"stamp_kai.png",
+			"imageUrl":"avatar.jpg",
 			"name":"kai"
 		}
 	],
