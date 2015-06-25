@@ -5,7 +5,7 @@
 		var that = this;
 		 $.getJSON('js/imageRoll/data.json',function(data) {
 		 	for( var i = 0, len = data.images.length; i < len; i++) {
-		 		imgSet += '<img class="img_zmh" src="' + data.basicFolder + data.images[i].imageUrl +'" width="100%" height="100%"></img>';
+		 		imgSet += '<img class="img_zmh" src="' + data.basicFolder + data.images[i].imageUrl +'"></img>';
 		 	}
 
 		 	html = '<div class="leftArrow"><div class="arAreaLeft"></div></div>'
