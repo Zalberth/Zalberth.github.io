@@ -1,0 +1,21 @@
+{
+	"images":[
+		{
+			"imageUrl":"avatar.jpg",
+			"name":"avatar"
+		},
+		{
+			"imageUrl":"avatarMobile.png",
+			"name":"avatarMobile"
+		},
+		{
+			"imageUrl":"stamp_garbage.png",
+			"name":"garbage"
+		},
+		{
+			"imageUrl":"stamp_kai.png",
+			"name":"kai"
+		}
+	],
+	"basicFolder":"../images/"
+}

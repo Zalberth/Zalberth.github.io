@@ -1,0 +1,53 @@
+#imageRoll_zmh {
+	width: 400px;
+	height: 300px;
+}
+
+@arrowWidth:0.2;
+@arrowTopMargin:100%;
+.leftArrow,.rightArrow {
+	float: left;
+	height: 100%;
+	width: percentage(@arrowWidth);
+}
+
+.arAreaLeft {
+	margin-top: @arrowTopMargin;
+	float: left;
+	width: 43px;
+	height: 100px;
+	background: url('../../images/lfArrow.png') no-repeat;
+	background-position: -57px 0px;
+
+	&:hover {
+		background: url('../../images/lfArrow.png') no-repeat;
+	    background-position: 0px 0px;
+	    cursor: pointer;
+	}
+}
+.arAreaRight {
+	margin-top: @arrowTopMargin;
+	float: right;
+	width: 43px;
+	height: 100px;
+	background: url('../../images/rgtArrow.png') no-repeat;
+	background-position: 0px 0px;
+
+	&:hover {
+		background: url('../../images/rgtArrow.png') no-repeat;
+	    background-position: -57px 0px;
+	    cursor: pointer;
+	}
+}
+.imageZone {
+	float: left;
+	position: relative;
+	height: 100%;
+	width:  percentage(1 - 2*@arrowWidth);
+	background-color: black;
+}
+.img_zmh {
+	position: absolute;
+	top:0;
+	left:0;
+}
