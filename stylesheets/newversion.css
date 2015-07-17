@@ -100,6 +100,7 @@ body {
   width: 15%;
   /*background-color: rgb(186, 237, 238);*/
   background-color: #F5FBFB;
+  border-left: 3px dashed #a2d389;
   z-index: 2;
 }
 #contentDisplayer {
