@@ -27,7 +27,7 @@ body {
   height: 80px;
   box-sizing: border-box;
   background-color: #27B1B4;
-  z-index: 1;
+  z-index: 3;
 }
 #idTitle {
   float: left;
@@ -91,6 +91,16 @@ body {
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
 }
+.rightArea {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 15%;
+  /*background-color: rgb(186, 237, 238);*/
+  background-color: #F5FBFB;
+  z-index: 2;
+}
 #contentDisplayer {
   margin-left: 255px;
   min-width: 500px;
@@ -109,6 +119,7 @@ body {
   height: 100%;
 }
 #article_list {
+  font-family: "微软雅黑";
   margin-left: 5px;
   color: white;
 }
@@ -144,7 +155,7 @@ body {
   color: white;
   border: 2px solid white;
   border-radius: 25px;
-  z-index: 2;
+  z-index: 4;
 }
 #stamp_garbage {
   position: fixed;
