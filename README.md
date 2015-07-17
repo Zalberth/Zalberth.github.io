@@ -1,5 +1,6 @@
 # ibasonic.com
 * if `www` is added before ibasonic.com, an auto link will trigger.
+* mobile version is ongoing
 
 ## Testing the Markdown grammar.
 * list1
