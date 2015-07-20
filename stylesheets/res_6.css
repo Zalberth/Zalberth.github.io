@@ -159,6 +159,7 @@
   border:0 solid white;
   z-index: 2;
 }
-#stamp_kai,#stamp_garbage {
+#stamp_kai,#stamp_garbage,#usefulLinks {
 	display: none;
 }
+
