@@ -120,6 +120,18 @@
 .zmh_cursor:hover {
 	cursor: pointer;
 }
+.rightArea {
+	display: none;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 15%;
+	/*background-color: rgb(186, 237, 238);*/
+	background-color: #F5FBFB;
+	border-left: 3px dashed rgb(162, 211, 137);
+	z-index: 2;
+}
 #zmh_usf_links {
   position: absolute;
   left: 0px;
