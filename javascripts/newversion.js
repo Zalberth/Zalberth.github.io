@@ -76,7 +76,5 @@ $(function() {
 
       $.get('articles/resume.html', function(data) {  //Load The Default Article
     	 $('#contentDisplayer').html(data);
-      });
-        
-       
+      });    
 });
