@@ -1,6 +1,7 @@
 # ibasonic.com
 * if `www` is added before ibasonic.com, an auto link will trigger.
 * mobile version is ongoing
+* about to move to ECS using nodejs as the server side.
 
 ## Testing the Markdown grammar.
 * list1
