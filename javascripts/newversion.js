@@ -6,13 +6,13 @@ $(function() {
       var artLists = '';
 
       $.getJSON('articles/list.json',function(data) {
-      		artLists = '<div id="articleLists"><ul id="article_list">';
+      		artLists = '<ul id="article_list">';
       	$.each(data.lists,function(k,v) { //$.each sync
       		
       			artLists += '<li class="zmh_cursor" data-target="'+v.where+'">'+v.name+'</li>';
       		
       	});
-      	artLists += '</ul></div>';
+      	artLists += '</ul>';
       	$('#articleLists').append(artLists);
       	$('.zmh_cursor').on('click',function(e) {
       		e.preventDefault();
@@ -24,9 +24,11 @@ $(function() {
           	 $('#contentDisplayer').html(data);
        		 });
         }); 
+         mediaSizeChange(mq); //for First-time Load 
+         mq.addListener(mediaSizeChange);
       });
-      mediaSizeChange(mq); //for First-time Load 
-      mq.addListener(mediaSizeChange);
+
+        
 
       function mediaSizeChange(mediaQuery) { //Listening to the Media Query Change
         if( mediaQuery.matches ){
