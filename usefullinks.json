@@ -1,0 +1,38 @@
+{
+	"usflinks":[{
+		"linkname":"mahua.jser.me",
+		"linkto":"http://mahua.jser.me"
+	},
+	{
+		"linkname":"maxiang.info",
+		"linkto":"http://maxiang.info"
+	},
+	{
+		"linkname":"Dribbble",
+		"linkto":"https://dribbble.com"
+	},
+	{
+		"linkname":"Code Project",
+		"linkto":"http://www.codeproject.com/"
+	},
+	{
+		"linkname":"Stackoverflow",
+		"linkto":"http://stackoverflow.com/"
+	},
+	{
+		"linkname":"Bitbucket",
+		"linkto":"https://bitbucket.org/"
+	},
+	{
+		"linkname":"HackNews",
+		"linkto":"https://news.ycombinator.com/"
+	},
+	{
+		"linkname":"Kickstarter",
+		"linkto":"https://www.kickstarter.com/"
+	},
+	{
+		"linkname":"JavascriptGarden",
+		"linkto":"http://bonsaiden.github.io/JavaScript-Garden/"
+	}]
+}

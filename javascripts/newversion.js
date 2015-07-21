@@ -28,6 +28,15 @@ $(function() {
          mq.addListener(mediaSizeChange);
       });
 
+      $.getJSON('usefullinks.json',function(data) {
+        usflinks = '<ul>';
+        $.each(data.usflinks,function(k,v) {
+          usflinks += '<li><a href="' + v.linkto + '">' + v.linkname + '</a></li>'
+        });
+        usflinks += '</ul>';
+        $('#usflinks').after(usflinks);
+      });
+
         
 
       function mediaSizeChange(mediaQuery) { //Listening to the Media Query Change
