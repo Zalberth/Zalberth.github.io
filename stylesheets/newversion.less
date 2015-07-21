@@ -66,6 +66,13 @@ html,body {
 	-webkit-transform:rotate(@degs); /* Safari 和 Chrome */
 	-o-transform:rotate(@degs);  /* Opera */
 }
+.opacity_cross(@opcty) {
+	 @opacityPercentage: @opcty * 100;
+	  filter: ~"alpha(opacity = (@{opacityPercentage}))";
+      -moz-opacity:@opcty;  
+      -khtml-opacity:@opcty;  
+      opacity:@opcty;
+}
 
 #toGithub {
   float:right;  
@@ -258,6 +265,7 @@ html,body {
 	height:45px;
 	background-color:white;
 	z-index:1;
+	.opacity_cross(0.9);
 }
 
 /*Scrollbar jquery has plugins to make*/

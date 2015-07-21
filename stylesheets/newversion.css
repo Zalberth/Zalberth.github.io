@@ -247,5 +247,9 @@ body {
   height: 45px;
   background-color: white;
   z-index: 1;
+  filter: alpha(opacity = (90));
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
 }
 /*Scrollbar jquery has plugins to make*/
