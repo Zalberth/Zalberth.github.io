@@ -34,5 +34,9 @@
 	{
 		"linkname":"JavascriptGarden",
 		"linkto":"http://bonsaiden.github.io/JavaScript-Garden/"
+	},
+	{
+		"linkname":"IsPost",
+		"linkto":"http://120.25.238.234:3000/ispost"
 	}]
 }
