@@ -34,7 +34,7 @@ $(function() {
           usflinks += '<li><a href="' + v.linkto + '">' + v.linkname + '</a></li>'
         });
         usflinks += '</ul>';
-        $('#usflinks').after(usflinks);
+        $('#usefulLinks .usflinks').after(usflinks);
       });
 
         
@@ -78,7 +78,7 @@ $(function() {
         }
       }
 
-      $('#toGithub').on('click',function(e) {
+      $('#header .toGithub').on('click',function(e) {
         e.preventDefault();
         window.open("https://github.com/Zalberth");    
       });

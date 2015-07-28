@@ -29,8 +29,6 @@
   margin-right: 10px;
   padding: 3px;
 }
-
-
 #toggleArticleLists {
   position: fixed;
   display: block;
@@ -58,8 +56,6 @@
   border-bottom-right-radius: 8px;
   z-index: 3;
 }
-
-
 #article_list {
   margin-left: 0;
   margin-top: 30px;
@@ -67,8 +63,6 @@
   padding-left: 0;
   color: white;
 }
-
-
 #contentDisplayer {
 	width: 100%;
 	margin-left: 0;
@@ -76,7 +70,6 @@
 	height: auto;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
 #footer {
   display: block;
   position: fixed;
@@ -93,34 +86,27 @@
   height: 75px;
   background-color: white;
 }
-
-#footerNotes {
+#footer .footerNotes {
   text-align: center;
   color:#27B1B4;
   font-weight: bolder;
   margin-top: 20px;
 }
-
-
 #right_container {
   margin-left: 260px;
   width: 50px;
   height: 100%;
 }
-
-
 .zmh_cursor {
 	list-style-type:none;
 	text-align: left;
 	box-sizing:border-box;
 	border-bottom: 1px solid #BCDFA9;
 }
-
-
 .zmh_cursor:hover {
 	cursor: pointer;
 }
-.rightArea {
+#rightArea {
 	display: none;
 	position: fixed;
 	right: 0;
@@ -143,7 +129,6 @@
   background-color: red;
   cursor: pointer;
 }
-
 #fixedElem {
   position: fixed;
   left: auto;

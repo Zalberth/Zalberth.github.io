@@ -14,18 +14,8 @@ body {
   background: #27B1B4;
   color: #FFF;
 }
-/* General & 'Reset' Stuff */
-#downloads .btn {
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-}
 /* Main Content
 */
-#main_content {
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-}
 #header {
   position: fixed;
   top: 0;
@@ -37,6 +27,36 @@ body {
   background-color: #27B1B4;
   z-index: 4;
   box-shadow: 0 2px 15px black;
+}
+#header .toGithub {
+  float: right;
+  cursor: pointer;
+  color: white;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 3px;
+  animation: hopping 1s infinite;
+  -webkit-animation: hopping 1s infinite;
+  -webkit-transition: box-shadow 0.2s ease;
+  -moz-transition: box-shadow 0.2s ease;
+  -ms-transition: box-shadow 0.2s ease;
+  -o-transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+}
+#header .toGithub:hover {
+  border: 2px solid white;
+  margin-top: 23px;
+  margin-right: 8px;
+  box-shadow: 2px 2px 2px #D5EFC8;
+  transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  /* IE 9 */
+  -moz-transform: rotate(9deg);
+  /* Firefox */
+  -webkit-transform: rotate(9deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(9deg);
+  /* Opera */
 }
 #idTitle {
   float: left;
@@ -57,36 +77,6 @@ body {
     margin-top: 25px;
   }
 }
-#toGithub {
-  float: right;
-  cursor: pointer;
-  color: white;
-  margin-top: 25px;
-  margin-right: 10px;
-  padding: 3px;
-  animation: hopping 1s infinite;
-  -webkit-animation: hopping 1s infinite;
-  -webkit-transition: box-shadow 0.2s ease;
-  -moz-transition: box-shadow 0.2s ease;
-  -ms-transition: box-shadow 0.2s ease;
-  -o-transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease;
-}
-#toGithub:hover {
-  border: 2px solid white;
-  margin-top: 23px;
-  margin-right: 8px;
-  box-shadow: 2px 2px 2px #D5EFC8;
-  transform: rotate(9deg);
-  -ms-transform: rotate(9deg);
-  /* IE 9 */
-  -moz-transform: rotate(9deg);
-  /* Firefox */
-  -webkit-transform: rotate(9deg);
-  /* Safari 和 Chrome */
-  -o-transform: rotate(9deg);
-  /* Opera */
-}
 #toggleArticleLists {
   display: none;
 }
@@ -100,7 +90,7 @@ body {
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
 }
-.rightArea {
+#rightArea {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -109,6 +99,14 @@ body {
   background-color: #DCF8CE;
   border-left: 3px dashed #a2d389;
   z-index: 2;
+}
+#rightArea .blankShot {
+  width: 100%;
+  height: 82px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #contentDisplayer {
   margin-left: 255px;
@@ -198,14 +196,6 @@ body {
 .currentItem {
   border-right: 2px solid #27b1b4;
 }
-.blankShot {
-  width: 100%;
-  height: 82px;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 #usefulLinks {
   position: absolute;
   z-index: 3;
@@ -235,13 +225,13 @@ body {
   text-decoration: none;
   color: #2c670f;
 }
-#shadowTop {
+#usefulLinks .shadowTop {
   background-image: url("../images/shadowTop.png");
   background-size: 100% 100%;
   width: 100%;
   height: 10px;
 }
-#shadowBottom {
+#usefulLinks .shadowBottom {
   background-image: url("../images/shadowBottom.png");
   background-size: 100% 100%;
   width: 100%;
