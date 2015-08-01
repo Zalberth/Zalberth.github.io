@@ -4,6 +4,7 @@ $(function() {
       var listNum = 0;
       var listItemsHeight = 0;
       var artLists = '';
+      
       $('#contentDisplayer').before('<div style="width:100%;height:135px;"></div>');
       $.getJSON('articles/list.json',function(data) {
       		artLists = '<ul id="article_list">';
