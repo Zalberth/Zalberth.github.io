@@ -1,9 +1,9 @@
 $(function() {          
-      var mq = window.matchMedia( "(max-device-width: 1200px)" );
-      var listsClicked = 0;
-      var listNum = 0;
-      var listItemsHeight = 0;
-      var artLists = '';
+      var mq = window.matchMedia( "(max-device-width: 1200px)" ),
+        listsClicked = 0,
+        listNum = 0,
+        listItemsHeight = 0,
+        artLists = '';
       
       $('#contentDisplayer').before('<div style="width:100%;height:135px;"></div>');
       $.getJSON('articles/list.json',function(data) {
