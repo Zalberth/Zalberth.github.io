@@ -38,5 +38,9 @@
 	{
 		"linkname":"IsPost",
 		"linkto":"http://120.25.238.234:3000/ispost"
+	},
+	{
+		"linkname":"R-Port",
+		"linkto":"http://120.25.238.234:3100/lg"
 	}]
 }
