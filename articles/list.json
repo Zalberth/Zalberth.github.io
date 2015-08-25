@@ -30,5 +30,9 @@
 	{
 		"name":"《周鸿祎自述:我的互联网方法论》重点摘录",
 		"where":"zhyMethodology"
+	},
+	{
+		"name":"Passport使用小结",
+		"where":"UnderstandPassportAuthFlow"
 	}]
 }
