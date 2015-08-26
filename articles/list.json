@@ -34,5 +34,10 @@
 	{
 		"name":"Passport使用小结",
 		"where":"UnderstandPassportAuthFlow"
-	}]
+	},
+	{
+		"name":"《中华文化四十七讲》大略回顾",
+		"where":"47lectures_about_cc"
+	}
+	]
 }
