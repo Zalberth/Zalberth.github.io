@@ -4,10 +4,6 @@
 		"where":"gitInWindowsInstall"
 	},
 	{
-		"name":"个人简历",
-		"where":"resume"
-	},
-	{
 		"name":"CSS Media Query的使用",
 		"where":"mediaquery"
 	},
