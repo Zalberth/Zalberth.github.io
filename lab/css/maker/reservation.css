@@ -4,15 +4,22 @@ body {
   padding: 0;
 }
 #header {
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: #DE5133;
   color: white;
   width: 100%;
   height: 60px;
 }
 #header h1 {
+  font-size: 25px;
   padding: 0;
   margin: 0;
   text-align: center;
   font-family: '幼圆';
   line-height: 60px;
+}
+#container {
+  margin-top: 60px;
 }
