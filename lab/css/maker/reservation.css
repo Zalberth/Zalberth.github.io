@@ -33,8 +33,9 @@ body {
 }
 #container .nav {
   width: 100%;
-  height: 20px;
-  line-height: 20px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
   color: #DE5133;
   font-family: '幼圆';
