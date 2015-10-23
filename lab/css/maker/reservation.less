@@ -12,14 +12,30 @@ html,body {
 	width: 100%;
 	height: @headerHeight;
 	& h1 {
-		font-size: 25px;
+		font-size: 25px ;
 		padding: 0;
 		margin: 0;
 		text-align: center;
 		font-family: '幼圆';
 		line-height: @headerHeight;
 	}
+	& .isLogin {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: @headerHeight - 10px;
+		background-color: #E06D55;
+	}
 }
 #container {
 	margin-top: @headerHeight;
+	& .nav {
+		width: 100%;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		color: #DE5133;
+		font-family: '幼圆';
+	}
 }
