@@ -2,12 +2,13 @@ html,body {
 	margin: 0;
 	padding: 0;
 }
+@orange:#DE5133;
 @headerHeight:60px;
 #header {
 	position: fixed;
 	top: 0;
 	right: 0;
-	background-color: #DE5133;
+	background-color: @orange;
 	color: white;
 	width: 100%;
 	height: @headerHeight;
@@ -36,7 +37,40 @@ html,body {
 		font-size: 20px;
 		line-height: 30px;
 		text-align: center;
-		color: #DE5133;
+		color: @orange;
 		font-family: '幼圆';
+	}
+}
+.list > li {
+	list-style: none;
+	border:2px solid @orange;
+	border-radius: 4px;
+	margin: 0 auto;
+	width: 95%;
+	height: 40px;
+	&:not(:first-child) {
+		margin-top: 20px;
+	}
+}
+ul {
+	padding: 0;
+
+}
+@applyHeight:40px;
+#apply {
+	position: fixed;
+	background-color: @orange;
+	font-family: '幼圆';
+	border-radius: 10px;
+	left: 50%;
+	bottom: 10px;
+	width: 100px;
+	height: @applyHeight;
+	margin-left: -50px;
+	line-height: @applyHeight;
+	color: white;
+	text-align: center;
+	&:hover {
+		cursor: pointer;
 	}
 }
