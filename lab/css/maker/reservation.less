@@ -31,6 +31,7 @@ html,body {
 }
 #container {
 	margin-top: @headerHeight;
+	margin-bottom: @applyHeight + 12px;
 	& .nav {
 		width: 100%;
 		height: 30px;
@@ -41,21 +42,42 @@ html,body {
 		font-family: '幼圆';
 	}
 }
+@itemHeight:40px;
 .list > li {
 	list-style: none;
-	border:2px solid @orange;
-	border-radius: 4px;
+	
 	margin: 0 auto;
 	width: 95%;
-	height: 40px;
+	height: auto;
 	&:not(:first-child) {
 		margin-top: 20px;
+	}
+	& .item {
+		border:2px solid @orange;
+	    border-radius: 4px;
+		width: 100%;
+		height: @itemHeight;
+		font-family: '幼圆';
+		color: @orange;
+		& .date {
+			float: left;
+			margin-left: 5px;
+			line-height: @itemHeight;
+			height: @itemHeight;
+		}
+		& .weekday {
+			float: right;
+			margin-right: 5px;
+			line-height: @itemHeight;
+			height: @itemHeight;
+		}
 	}
 }
 ul {
 	padding: 0;
 
 }
+
 @applyHeight:40px;
 #apply {
 	position: fixed;
