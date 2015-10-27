@@ -34,8 +34,19 @@ $(function(){
 	//
 	$('.list').append(lists);
 	$('.item').bind('click', function() {
-		var sample = '<div class="bar"></div>';
-		$(this).after(sample);
-		$('.bar').animate({height:'60px'});
+		//console.log($(this).data('expanded'));
+		if($(this).data('expanded') === undefined ) {
+			var sample = '<div class="bar"></div>';
+			$(this).after(sample);
+		}
+
+		if($(this).data('expanded') != undefined && $(this).data('expanded') === '1') {
+			$(this).next().animate({height:'0px'});
+			$(this).data('expanded','0'); 
+		} else {		
+			$(this).next().animate({height:'60px'});
+			$(this).data('expanded','1'); 
+		}
+		
 	});
 })
