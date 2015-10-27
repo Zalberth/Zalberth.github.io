@@ -1,4 +1,5 @@
 $(function(){
+	//好的做法是将时间从服务器同步，稍后修改
 	var today = new Date();
 	$('#container .date').html(today.getFullYear() + '年' + (today.getMonth()+1) + '月');
 	//在list中插入未来的七天
@@ -33,6 +34,8 @@ $(function(){
 	} 
 	//
 	$('.list').append(lists);
+
+	//绑定伸缩事件
 	$('.item').bind('click', function() {
 		//console.log($(this).data('expanded'));
 		if($(this).data('expanded') === undefined ) {
@@ -48,5 +51,13 @@ $(function(){
 			$(this).data('expanded','1'); 
 		}
 		
+	});
+
+	$('#apply').bind('click',function() {
+		alert('TODO:申请进行时');
+	});
+
+	$('#header .isLogin').bind('click',function() {
+		alert('TODO:状态显示，做成弹出框');
 	});
 })
