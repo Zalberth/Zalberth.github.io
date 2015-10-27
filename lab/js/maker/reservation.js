@@ -7,7 +7,7 @@ $(function(){
 	var nextday = new Date(nextdayt);
 	var lists = '', day = '';
 
-	for( var i = 0; i< 12; i++ ) {
+	for( var i = 0; i< 7; i++ ) {
 
 		switch(nextday.getDay()) {
 			case 0: day = '星期天'; break;
@@ -47,7 +47,7 @@ $(function(){
 			$(this).next().animate({height:'0px'});
 			$(this).data('expanded','0'); 
 		} else {		
-			$(this).next().animate({height:'60px'});
+			$(this).next().animate({height:'100px'});
 			$(this).data('expanded','1'); 
 		}
 		
