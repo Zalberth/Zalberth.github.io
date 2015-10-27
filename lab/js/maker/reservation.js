@@ -33,4 +33,9 @@ $(function(){
 	} 
 	//
 	$('.list').append(lists);
+	$('.item').bind('click', function() {
+		var sample = '<div class="bar"></div>';
+		$(this).after(sample);
+		$('.bar').animate({height:'60px'});
+	});
 })

@@ -90,3 +90,8 @@ ul {
 #apply:hover {
   cursor: pointer;
 }
+.bar {
+  width: 100%;
+  height: 0px;
+  background-color: #de5133;
+}
