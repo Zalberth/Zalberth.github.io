@@ -59,6 +59,6 @@ $(function(){
 	});
 
 	$('#header .isLogin').bind('click',function() {
-		alert('TODO:状态显示');
+		alert('TODO:状态显示!');
 	});
 })
