@@ -54,7 +54,7 @@ $(function(){
 	});
 
 	$('#apply').bind('click',function() {
-		$(this).after('<div class="loader">hah</div>');
+		$(this).after('<div id="masker"><div class="loader">Loading</div></div>');
 		alert('TODO:申请进行时');
 	});
 
