@@ -45,6 +45,6 @@
 	},
 	{
 		"linkname":"Maker",
-		"linkto":"lab/reservation.html"
+		"linkto":"http://120.25.238.234:3111/static/reservation.html"
 	}]
 }

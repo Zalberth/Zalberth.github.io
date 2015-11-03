@@ -108,7 +108,7 @@ ul {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 //animation loading
 .loader,
@@ -169,3 +169,86 @@ ul {
     height: 5em;
   }
 }
+#applyDialog {
+	& h1{
+		color: white;
+		font-family: '幼圆';
+		font-size: 1.5em;
+		text-align: center;
+	}
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background-color: @orange;
+}
+input {
+	display: block;
+}
+input[type=submit],input[type=button]{
+	-webkit-appearance:none;
+	outline:none
+}
+#submitReserv {
+	width:40%;
+	height: 50px;
+	position: absolute;
+	left: 5%;
+	bottom: 4px;
+	font-size: 1em;
+	background-color: @orange;
+	color: white;
+	border:2px solid white;
+	border-radius: 1px;
+	font-family: '幼圆';
+}
+#cancelbtn {
+	width:40%;
+	height: 50px;
+	position: absolute;
+	right: 5%;
+	bottom: 4px;
+	font-size: 1em;
+	background-color: grey;
+	color: white;
+	border:2px solid white;
+	border-radius: 1px;
+	font-family: '幼圆';
+}
+#secondhalf {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:column;
+	flex-direction:column;
+	position: fixed;
+	bottom: 5px;
+	left: 10%;
+	width: 80%;
+	height: 45%;
+	z-index: 4;
+}
+@hightlight:#52FB1B;
+#flex1,#flex2,#flex3,#flex4 {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction:row;
+	flex-direction:row;
+	margin-bottom: 4px;
+	flex:1;
+	& .days {
+		color: white;
+		border:2px solid white;
+		border-radius: 5px;
+		text-align: center;
+		padding: 15px;
+		margin-left: 3px;
+		flex:1;
+	}
+	& .changeColor {
+	color: @hightlight;
+	border-color: @hightlight;
+    }
+}
+

@@ -5,7 +5,8 @@ $(function(){
 	//在list中插入未来的七天
 	var nextdayt = today.getTime();
 	var nextday = new Date(nextdayt);
-	var lists = '', day = '';
+	var lists = '', day = '', applyDialog = '';
+
 
 	for( var i = 0; i< 7; i++ ) {
 
@@ -54,11 +55,56 @@ $(function(){
 	});
 
 	$('#apply').bind('click',function() {
+		var that = $(this);
 		$(this).after('<div id="masker"><div class="loader">Loading</div></div>');
-		alert('TODO:申请进行时');
+		//ajax:to get the login state
+		$.ajax({
+			url:'/loginValidation',
+			type:'GET',
+			dataType:'json',
+			success:function(data, textStatus) {
+				if(data.loginStatus === '1') {
+					$('.loader').remove();
+					applyDialog = '<form id="applyDialog" action="/sendReserv" method="POST">'+
+					'<h1>' + data.orgname + '</h1>' + 
+					'<input id="whichday" type="text">' +
+					'<input id="starttime" type="text">'+
+					'<input id="endtime" type="textt">'+
+					'<input id="submitReserv" type="button" value="提交">'+
+					'<input id="cancelbtn" type="button" value="取消">' + '</form>';
+					//插入时间选择框
+					that.after(applyDialog);
+					$('#cancelbtn').on('click', function() {
+						$('#applyDialog').remove();
+						$('#masker').remove();
+						$('#secondhalf').remove();
+					});
+					$('#submitReserv').on('click', function() {
+						var sencondhalf = '<div id="secondhalf">' +
+										  '<div id="flex1"><div class="days">10-11</div><div class="days">10-22</div></div>' +
+										  '<div id="flex2"><div class="days">10-11</div><div class="days">10-22</div></div>' +
+										  '<div id="flex3"><div class="days">10-11</div><div class="days">10-22</div></div>' +
+										  '<div id="flex4"><div class="days">10-11</div></div>' + '</div>';
+						that.after(sencondhalf);
+						$('.days').on('click', function() {
+							$(this).addClass('changeColor');
+							function removeHalf() {
+								$('#secondhalf').remove();
+							};
+							setTimeout(removeHalf,500);
+
+						});
+					});
+					//alert('TODO:用户已经登录');
+				}
+			}
+		});
+		
 	});
 
 	$('#header .isLogin').bind('click',function() {
 		alert('TODO:状态显示!');
 	});
+	
+
 })
